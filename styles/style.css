@@ -118,12 +118,27 @@ Updated on: 15-06-2025
 .section-title {
   margin: 60px 0 30px;
   font-weight: 600;
+  position: relative;
 }
 
-.section-title::after {
-  width: 150px;
-  height: 5px;
-  background-color: yellow;
+.section-title:after {
+  position: absolute;
+  content: "";
+  left: calc(50% - 40px);
+  bottom: -12px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
+}
+
+.section-title:before {
+  position: absolute;
+  content: "";
+  left: calc(50% - 25px);
+  bottom: -6px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
 }
 
 .track-card {
@@ -142,6 +157,48 @@ Updated on: 15-06-2025
   height: 350px;
 }
 
+.conference-committees {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+}
+.conference-committees h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.committee-block {
+  margin-bottom: 20px;
+}
+.committee-block h3 {
+  background: #007acc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.committee-block p {
+  margin: 10px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.committee-pair {
+  display: flex;
+  gap: 20px;
+}
+.committee-group {
+  width: 48%;
+}
+.cb-name {
+  font-size: 17px;
+  color: #000000;
+}
+.cb-des {
+  font-size: 14px;
+  color: #000000af;
+}
+
 @media (max-width: 800px) {
   .hero-content {
     padding: 0 20px;
@@ -156,7 +213,18 @@ Updated on: 15-06-2025
     flex-direction: column;
   }
   .theme-sec-gallery {
-    height: 250px;
+    height: 300px;
+    width: 100%;
+  }
+  .committee-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .committee-pair {
+    flex-direction: column;
+  }
+  .committee-group {
     width: 100%;
   }
 }

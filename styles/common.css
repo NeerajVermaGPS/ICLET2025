@@ -5,6 +5,7 @@ Updated on: 15-06-2025
 
 @import url("https://fonts.googleapis.com/css?family=Playfair Display");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible");
 body,
 html {
   width: 100%;
@@ -75,7 +76,7 @@ a {
   width: 90%;
 }
 .comfont {
-  font-family: var(--font2);
+  font-family: var(--TertiaryFont);
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -90,7 +91,7 @@ a {
   padding: 10px 15px;
   outline: none;
   font-size: 13px;
-  font-family: var(--font6);
+  font-family: var(--TertiaryFont);
   letter-spacing: 0.8px;
   cursor: pointer;
   transition: 0.4s;
