@@ -1,0 +1,166 @@
+/* 
+Author: Neeraj Verma
+Updated on: 15-06-2025
+*/
+
+.main-header {
+  height: 60px;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  transition: 0.5s;
+}
+.logo {
+  width: 200px;
+  font-size: 25px;
+    font-weight: bold;
+}
+.main-nav {
+  margin-right: 20px;
+  overflow: hidden;
+}
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+.main-nav ul a {
+  padding: 0 15px;
+  height: 70%;
+  font-family: var(--font2);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.nrm-btn {
+  color: var(--themeColor);
+}
+.nrm-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.nav-btn {
+  font-weight: bold;
+  background-color: var(--themeColor);
+  color: white;
+  border-radius: 6px;
+  outline: 3px solid var(--themeLight);
+  border: 1px solid var(--themeLight);
+}
+.nav-btn:hover {
+  background-color: aliceblue;
+  color: var(--themeColor);
+  outline: 3px solid #12024082;
+  border: 1px solid var(--themeColor);
+}
+.menu-nav {
+  width: 40px;
+  height: 60px;
+  margin: 0 15px;
+  display: none;
+}
+.menu-nav-ico {
+  height: 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+  justify-content: space-evenly;
+  width: 100%;
+  transition: 0.3s;
+}
+.menu-line {
+  width: 60%;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+.mniborder {
+  border: 1px solid white;
+}
+.animateMenu {
+  background-color: white;
+}
+.animateMenu:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 14px);
+  transform-origin: right;
+}
+.animateMenu:nth-child(2) {
+  width: 0;
+}
+.animateMenu:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 2px);
+  transform-origin: left;
+}
+
+@media only screen and (max-width: 650px) {
+  .about-image {
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .main-header {
+    transition: 0.3s;
+  }
+  .mhbg {
+    background: black;
+    border-bottom: 2px solid yellow;
+  }
+  .animate-logo-img {
+    filter: invert(1);
+  }
+  .main-nav {
+    height: 0px;
+    position: fixed;
+    top: 60px;
+    background: black;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .mnheight {
+    height: 370px;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+  .main-nav ul a {
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+  }
+  .menu-nav {
+    display: flex;
+  }
+  .nrm-btn {
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid #504d4d;
+  }
+  .nrm-btn:hover {
+    background-color: aliceblue;
+    color: var(--themeColor);
+  }
+  .nav-btn {
+    background-color: aliceblue;
+    color: var(--themeColor);
+    outline: 3px solid #12024082;
+    border: 1px solid var(--themeColor);
+  }
+  .nav-btn:hover {
+    background-color: var(--themeColor);
+    color: white;
+    outline: 3px solid aliceblue;
+    border: 1px solid var(--themeLight);
+  }
+}
