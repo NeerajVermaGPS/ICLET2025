@@ -1,6 +1,7 @@
 /* 
 Author: Neeraj Verma
-Updated on: 15-06-2025
+LinkedIn: https://www.linkedin.com/in/neerajvermagps/
+Updated on: 16-06-2025
 */
 
 const menuIcon = document.querySelector(".menu-nav-ico");

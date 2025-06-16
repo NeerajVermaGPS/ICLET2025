@@ -10,7 +10,7 @@
     content="ICLET 2025 — International Conference on Libraries & Emerging Technologies, organized by Poornima College of Engineering, Jaipur. Join us to explore AI, IoT, smart libraries, and innovative knowledge ecosystems." />
   <meta name="keywords"
     content="ICLET 2025, Libraries Conference, Emerging Technologies, Smart Libraries, AI in Libraries, IoT, Knowledge Ecosystem, Poornima College of Engineering, Library Technology Conference, Digital Transformation, Smart Knowledge Management" />
-  <meta name="author" content="Poornima College of Engineering" />
+  <meta name="author" content="Neeraj Verma, Poornima College of Engineering" />
   <meta property="og:title" content="ICLET 2025 | International Conference on Libraries & Emerging Technologies" />
   <meta property="og:description"
     content="Join ICLET 2025 at Poornima College of Engineering, Jaipur, to explore the future of libraries and emerging technologies including AI, IoT, and smart knowledge systems." />
@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/styles/common.css">
   <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/footer.css">
   <link rel="stylesheet" href="/styles/swiper.css">
   <link rel="stylesheet" href="/styles/style.css">
 </head>
@@ -52,8 +53,8 @@
         <a href="#tracks" class="nrm-btn center">
           <li>Tracks</li>
         </a>
-        <a href="#dates" class="nrm-btn center">
-          <li>Important Dates</li>
+        <a href="#committee" class="nrm-btn center">
+          <li>Conference Committee</li>
         </a>
         <a href="#register" class="nrm-btn center">
           <li>Register</li>
@@ -120,7 +121,7 @@
           <p class="mt-3">Whether you’re a librarian, technologist, policymaker, or student — <strong>ICLET 2025 is your
               opportunity to be part of a global movement redefining knowledge ecosystems</strong>.</p>
         </div>
-        <div class="column shadow rounded-2 p-4 date-ctnr">
+        <div class="column shadow rounded-2 p-4 date-ctnr" id="imp-dates">
           <h2 class="sub-section-title">Important Dates</h2>
           <ul class="list-unstyled dates">
             <li><span class="date-title">Paper Submission Opens:</span><span class="date-desc">July 1, 2025</span></li>
@@ -237,12 +238,11 @@
 
   <!-- Tracks Section -->
   <section id="tracks" class="py-5" style="background-color: var(--bg-color-light);">
-    <div class="container  fade-in-comp">
+    <div class="container fade-in-comp">
       <h2 class="section-title text-center">Conference Tracks</h2>
-      <div class="row">
-        <!-- Track 1 -->
-        <div class="col-md-6">
-          <div class="track-card">
+      <div class="center gap-3 align-items-start" style="flex-wrap: wrap;">
+        <div class="track-card-ctnr">
+          <div class="track-card column">
             <h5>Track 1: AI and Machine Learning in Library Services</h5>
             <ul>
               <li>Intelligent discovery systems</li>
@@ -252,9 +252,8 @@
             </ul>
           </div>
         </div>
-        <!-- Track 2 -->
-        <div class="col-md-6">
-          <div class="track-card">
+        <div class="track-card-ctnr">
+          <div class="track-card column">
             <h5>Track 2: Smart Libraries and Knowledge Ecosystems</h5>
             <ul>
               <li>Smart infrastructure and sensor technologies</li>
@@ -264,9 +263,8 @@
             </ul>
           </div>
         </div>
-        <!-- Track 3 -->
-        <div class="col-md-6">
-          <div class="track-card">
+        <div class="track-card-ctnr">
+          <div class="track-card column">
             <h5>Track 3: Digital Transformation and Library Innovation</h5>
             <ul>
               <li>Library automation and workflow optimization</li>
@@ -276,9 +274,8 @@
             </ul>
           </div>
         </div>
-        <!-- Track 4 -->
-        <div class="col-md-6">
-          <div class="track-card">
+        <div class="track-card-ctnr">
+          <div class="track-card column">
             <h5>Track 4: Policy, Leadership, and Strategic Planning</h5>
             <ul>
               <li>National and institutional policies on emerging technologies</li>
@@ -289,27 +286,72 @@
           </div>
         </div>
       </div>
+      <div class="full-w center mt-5"><a href="https://cmt3.research.microsoft.com/ICLET2025"
+          class="combtn black-border-black">Paper Submission Link(MS CMT)</a></div>
     </div>
   </section>
 
-  <section class="conference-committees">
+  <!-- Committee Section -->
+  <section class="conference-committees fade-in-comp" id="committee">
     <h2 class="section-title text-center center mb-5">Conference Committees</h2>
+    <div class="committee-patrons full-w">
+      <div class="committee-block center column full-w">
+        <h3 class="full-w">Chief Patron</h3>
+        <div class="card-ctnr">
+          <div class="card" id="card">
+            <div class="image-content">
+              <div class="card-image">
+                <img src="/assets/images/RahulSir.jpg" alt="Rahul Sir" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="quote">He stands as an accomplished edu-preneur and seasoned leader, with an illustrious tenure
+                exceeding 12 years as the Director of multiple educational institutions.</p>
+              <h4 class="name">Ar. Rahul Singhi</h4>
+              <h6 class="designation">Director, Poornima Group, Jaipur, India</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="committee-block center column gap-3 full-w">
+        <h3 class="full-w">Patrons</h3>
+        <div class="center gap-3 committee-patrons-b">
+          <div class="card-ctnr">
+            <div class="card" id="card">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="/assets/images/MaheshSir.jpg" alt="Mahesh Sir" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="quote">He has worked in various capacities such as, member Board of Studies, Chief-Valuation
+                  officer etc at University level.</p>
+                <h4 class="name">Dr. Mahesh Bundele</h4>
+                <h6 class="designation">Principal & Director, PCE, Jaipur, India</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card-ctnr">
+            <div class="card" id="card">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="/assets/images/PankajSir.jpg" alt="Pankaj Sir" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="quote">He has established Civil Department in PGI, PIET and Poornima University (PU) and all
+                  civil laboratories are established under his guidance.</p>
+                <h4 class="name">Dr. Pankaj Dhemla</h4>
+                <h6 class="designation">Vice Principal, PCE, Jaipur, India</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="committee-pair">
       <div class="committee-group fade-in-comp">
-        <div class="committee-block">
-          <h3>Chief Patron</h3>
-          <p><span class="cb-name">Ar. Rahul Singhi</span><span class="cb-des">Director, Poornima Group, Jaipur,
-              India</span></p>
-        </div>
-
-        <div class="committee-block">
-          <h3>Patrons</h3>
-          <p><span class="cb-name">Dr. Mahesh Bundele</span><span class="cb-des">Principal & Director, Poornima College
-              of Engineering, Jaipur</span></p>
-          <p><span class="cb-name">Dr. Pankaj Dhemla</span><span class="cb-des">Vice Principal, Poornima College of
-              Engineering, Jaipur</span></p>
-        </div>
-
         <div class="committee-block">
           <h3>General Chairs</h3>
           <p><span class="cb-name">Dr. Santosh Gupta</span><span class="cb-des">University of Rajasthan, Jaipur,
@@ -402,66 +444,251 @@
   </section>
 
   <!-- Registration Section -->
-  <section id="register" class="py-5 bg-light fade-in-comp">
+  <section id="register" class="py-5 px-2 full-w" style="background-color: var(--bg-color-light);">
     <div class="container">
+      <h2 class="section-title text-center">Registration Process</h2>
+      <p class="section-subtitle fade-in-comp">The co-author(s)/attendee(s) are also welcome to register for the
+        conference. They may
+        register with the same registration link after fee payment as applicable. Follow these simple steps to complete
+        your registration for the conference.</p>
+      <div class="steps">
+        <div class="step fade-in-comp">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Payment of Registration Fee</h3>
+          <p class="step-desc">The registration fee must be paid through ONLINE mode only. The registration fee details
+            in
+            all respective categories are given below.</p>
+        </div>
+        <div class="step fade-in-comp">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Filling Online Registration Form</h3>
+          <p class="step-desc">Please fill in your registration details and upload all the required documents using the
+            registration link(will be available soon).</p>
+        </div>
+        <div class="step fade-in-comp">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Receive Confirmation Email</h3>
+          <p class="step-desc">A confirmation email will be sent soon with your registration ID and further instructions
+            after registration.</p>
+        </div>
+      </div>
+      <div class="mt-4 px-2">
+        <h5 class="sub-section-title">Keep in Mind:</h5>
+        <ol style="text-align: justify; padding-left: 20px;">
+          <li>The publication fee includes registration as well as the publication fee. However, accommodation and
+            travel charges are not included in the registration fee.</li>
+          <li>Authors should check their authorship category before fee payment, as once the fee is deposited it will
+            not be refunded under any circumstances.</li>
+          <li>The organizing committee will not be responsible for any loss due to incorrect transactions and loss of
+            money.</li>
+          <li>Indian authors with international affiliations will have to pay a fee, as applicable to international
+            authors.</li>
+          <li>Authors are requested to keep a record of the transaction, as it is required to submit as proof at the
+            time of the registration process.</li>
+          <li>Payment receipt will be issued after the conference is over and upon verification of payment received at
+            our end.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registeration Fee Section -->
+  <section class="fade-in-comp">
+    <div class="fee-details-ctnr full-w">
       <h2 class="section-title text-center">Registration Fees</h2>
-      <div class="table-responsive">
-        <table class="table table-bordered text-center">
-          <thead class="table-primary">
-            <tr>
-              <th>Category</th>
-              <th>National (INR)</th>
-              <th>International (USD)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Regular Author (Academician/Industry)</td>
-              <td>1,500</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Regular Author (Ph.D./PG Student)</td>
-              <td>1,000</td>
-              <td>75</td>
-            </tr>
-            <tr>
-              <td>Regular Author (UG Student)</td>
-              <td>700</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Attendee / Co-author / Presentation Only</td>
-              <td>500</td>
-              <td>25</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="fee-details center gap-5 full-w align-items-start">
+        <div class="bank-details">
+          <div class="container">
+            <h2 class="sub-section-title">Bank Details for Payment</h2>
+            <p class="section-subtitle text-start">Please use the following account information for transferring your
+              registration fee.</p>
+
+            <div class="bank-info">
+              <div class="bank-row">
+                <span class="label">Bank Name:</span>
+                <span class="value">HDFC BANK</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Bank Branch Address:</span>
+                <span class="value">F-129,RIICO INDUSTRIAL AREA, SITAPURA, SANGANER,JAIPUR</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Bank Account Holder Name:</span>
+                <span class="value">POORNIMA COLLEGE PART ONE</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Bank Account No. (For NEFT/ RTGS/ E- Payment):</span>
+                <span class="value">50200068726990</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Type of Account:</span>
+                <span class="value">CURRENT ACCOUNT</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Bank IFSC Code:</span>
+                <span class="value">HDFC0003873</span>
+              </div>
+              <div class="bank-row">
+                <span class="label">Bank MICR Code:</span>
+                <span class="value">302240028</span>
+              </div>
+            </div>
+
+            <p class="note text-start">* After making the payment, please take the screenshot of receipt and upload it
+              in registration form.</p>
+          </div>
+        </div>
+        <div class="fee-table container">
+          <h2 class="sub-section-title">Fee Details</h2>
+          <p class="section-subtitle text-start">Authors should check their authorship category before fee payment as
+            follows:</p>
+
+          <div class="table-responsive px-2">
+            <table class="table text-center rounded-2 fee-table-table">
+              <thead>
+                <tr>
+                  <th class="text-start" style="color: #2c5282; padding: 20px 10px;">Category</th>
+                  <th style="color: #2c5282; padding: 20px 10px;">National (INR)</th>
+                  <th style="color: #2c5282; padding: 20px 10px;">International (USD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-start">Regular Author<br />(Academician/Industry)</td>
+                  <td>1,500</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Regular Author<br />(Ph.D./PG Student)</td>
+                  <td>1,000</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Regular Author<br />(UG Student)</td>
+                  <td>700</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td class="text-start">Attendee / Co-author / Presentation Only</td>
+                  <td>500</td>
+                  <td>25</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-scroll">Scroll left if not visible. <img src="/assets/icons/next.svg" alt="scroll"
+              style="height: 14px; margin-left: 10px;"></p>
+          <p class="note text-start">* Please take a note that once the fee is deposited it will not be refunded under
+            any circumstances..</p>
+        </div>
       </div>
       <p class="text-center">All payments via NEFT/UPI/Wire Transfer. <a href="#contact">Contact us</a> for details.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 fade-in-comp">
+  <!-- Venue Section -->
+  <section id="venue-section" class="py-5 px-2 full-w venue-section" style="background-color: var(--bg-color-light);">
     <div class="container">
-      <h2 class="section-title text-center">Contact & Queries</h2>
+      <h2 class="section-title text-center fade-in-comp">Venue: PCE Campus</h2>
+      <div class="row py-lg-5">
+        <div class="col-12 col-lg-7 h-100">
+          <div class="desc fade-in-comp">
+            <h4 class="sub-section-title mb-3">How To Get Here</h4>
+            <p style="text-align: justify;">Poornima College of Engineering is located in Jaipur city of Rajasthan in
+              Northern India, around 270 km south of Delhi. The following guidelines may help you to reach the
+              conference venue.</p>
+
+            <div class="pt-3 root-ctnr">
+              <div class="reach-card-column column">
+                <div class="reach-card">
+                  <div class="grid-item p-4">
+                    <h5 class="text-dark-blue mb-3 title"><img class="vehicle-icon" src="/assets/icons/plane.svg"
+                        alt="plane">By Plane</h5>
+                    <p style="text-align: justify;">Delhi International Airport is closest if a direct flight to Jaipur
+                      is available. Poornima College Engineering is approximately 13 Km from Sanganer Airport, Jaipur.
+                    </p>
+                  </div>
+                </div>
+                <div class="reach-card">
+                  <div class="grid-item p-4">
+                    <h5 class="text-dark-blue mb-3 title"><img class="vehicle-icon" src="/assets/icons/train.svg"
+                        alt="train">By Train</h5>
+                    <p style="text-align: justify;">Indian railways connect Jaipur to almost all major cities of the
+                      country. There are three railway stations other than the main railway station of Indian railways
+                      in Jaipur city: The PCE campus is located 22 km from the central railway station (Jaipur
+                      Junction). This campus is 14 Km from Durgapura Railway Station, 16 Km from Gandhinagar Railway
+                      Station, and 10 Km from Jagatpura Railway Station. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column reach-card-column">
+                <div class="reach-card d-flex" style="height: -webkit-fill-available;">
+                  <div class="grid-item p-4">
+                    <h5 class="text-dark-blue mb-3 title"><img class="vehicle-icon" src="/assets/icons/car.svg"
+                        alt="car">By Road</h5>
+                    <p style="text-align: justify;">
+                      <strong>From National Highway 8:</strong><br /> Connects Jaipur to Delhi, Ajmer, Udaipur,
+                      Ahmadabad, Vadodara, Mumbai<br />
+                      <strong>From National Highway 11:</strong><br /> Connects Jaipur to Agra → Jaipur → Bikaner<br />
+                      <strong>From National Highway 12:</strong><br /> Connects Jabalpur → Bhopal → Khilchipur → Aklera
+                      → Jhalawar → Kota → Bundi → Devli → Tonk → Jaipur<br />
+                      <br />
+                      Following any route, one can reach the Sindhi Camp Bus Stand (the Central Bus Stand of Jaipur
+                      city). From Sindhi camp, which is 22 km away from Poornima College Engineering campus, one can
+                      take a bus, prepaid taxi, Ola/Uber/Taxi, or an auto to reach the PCE campus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
+          <div class="figures-holder">
+            <div class="figure figure-1"><img class="shadow" src="/assets/images/college1.webp" alt="venue"></div>
+            <div class="figure figure-2"><img class="shadow" src="/assets/images/college2.webp" alt="venue"></div>
+            <div class="figure figure-3"><img class="shadow" src="/assets/images/college3.avif" alt="venue"></div>
+            <div class="figure figure-4"><img class="shadow" src="/assets/images/college4.webp" alt="venue"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container fade-in-comp">
+      <h4 class="sub-section-title mb-4">Facilities &amp; Accommodations</h4>
+      <p>Accommodation and travel costs are not included in the registration fee; the delegates and participants need to
+        reserve rooms themselves. Nearby hotel lists will be displayed on the conference website.</p>
+      <a class="combtn black-border-black m-0 mb-3" href="https://www.google.com/search?q=hotels+in+Jaipur">Search
+        Hotels</a>
+    </div>
+    <div class="container reach-us px-3">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.335334018526!2d75.85106807401253!3d26.76557876640074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c1c7f8fffffff%3A0x7ee5a5f5b127bb8d!2sPoornima%20College%20of%20Engineering%20-%20PCE%20%7C%20Best%20College%20for%20Engineering%20in%20Jaipur%20%7C%20NAAC%20A%2B%20Accredited!5e0!3m2!1sen!2sin!4v1750092231854!5m2!1sen!2sin"
+        class="reach-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 px-2 fade-in-comp">
+    <div class="container">
+      <h2 class="section-title text-center" style="text-transform: capitalize;">Do you have any question?</h2>
+      <p class="section-subtitle">Feel free to ask us about anything related to this conference and exhibition. We will
+        be happy to answer your curiosity and gain new insights and perspectives about this event. Just fill out this
+        formor contact on following details and we will reply as soon as possible.</p>
       <p class="text-center mb-4">Organizing Secretary: Neema Shukla | +91-9887176147 | <a
           href="mailto:iclet2025@poornima.org">iclet2025@poornima.org</a></p>
       <div class="row justify-content-center">
         <div class="col-md-8">
           <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Your Name" required />
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Your Name" required />
+              <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Your Email" required />
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Your Email" required />
+              <textarea id="question" name="question" class="form-control" rows="4"
+                placeholder="Your Question"></textarea>
             </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Your Question"></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Submit Query</button>
+            <div class="text-center center justify-content-end">
+              <button type="submit" class="combtn black-border-black mx-0">Submit Query</button>
             </div>
           </form>
         </div>
@@ -469,11 +696,52 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2025 ICLET. All Rights Reserved.</p>
-      <p class="mb-0">Designed, Developed and Managed by <a href="https://neerajvermagps.infinityfreeapp.com/">Neeraj
+  <!-- Footer Section -->
+  <footer class="footer-area section-padding column">
+    <div class="container align-items-start">
+      <div class="center c-row flex-wrap gap-3 align-items-start">
+        <div class="footer-col">
+          <h3 style="font-size: 25px;">ICLET 2025</h3>
+          <p>An international conference exploring smart libraries, digital transformation, AI, and emerging
+            technologies in knowledge management and library innovation.</p>
+        </div>
+        <div class="footer-col">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#about">About Conference</a></li>
+            <li><a href="#committee">Conference Committee</a></li>
+            <li><a href="#imp-dates">Event Shedule</a></li>
+            <li><a href="#register">Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>OTHER LINKS</h3>
+          <ul>
+            <li><a href="https://poornima.edu.in/">About Poornima</a></li>
+            <li><a href="https://poornima.edu.in/life-at-poornima/events">Life At Poornima</a></li>
+            <li><a href="https://blog.poornima.edu.in/">Blogs</a></li>
+            <li><a href="https://poornima.edu.in/placements/overview">Placements</a></li>
+            <li><a href="https://poornima.edu.in/other-links/admission">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>FOLLOW US ON</h3>
+          <ul class="footer-social c-row" style="height: 40px;">
+            <li><a class="center facebook" href="#"><img src="/assets/icons/facebook.svg" alt="facebook"></a></li>
+            <li><a class="center twitter" href="#"><img src="/assets/icons/twitter.svg" alt="twitter"></a></li>
+            <li><a class="center linkedin" href="#"><img src="/assets/icons/linkedin.svg" alt="linkedin"></a></li>
+            <li><a class="center google-plus" href="#"><img src="/assets/icons/instagram.svg" alt="instagram"></a>
+            </li>
+          </ul>
+          <img src="/assets/images/poornima.png" alt="poornima" style="width: 180px; margin-top: 30px;">
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+      <p class="mb-0 p-0">&copy; 2025 ICLET. All Rights Reserved.</p>
+      <p class="mb-0 p-0">Designed, Developed and Managed by <a
+          href="https://neerajvermagps.infinityfreeapp.com/">Neeraj
           Verma</a> and Sumit Kumar</p>
     </div>
   </footer>

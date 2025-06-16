@@ -1,11 +1,13 @@
 /* 
 Author: Neeraj Verma
-Updated on: 15-06-2025
+LinkedIn: https://www.linkedin.com/in/neerajvermagps/
+Updated on: 16-06-2025
 */
 
 @import url("https://fonts.googleapis.com/css?family=Playfair Display");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible");
+
 body,
 html {
   width: 100%;
@@ -16,70 +18,86 @@ html {
   user-select: none;
   -webkit-user-select: none;
 }
+
 * {
   box-sizing: border-box;
 }
+
 :root {
   --main-theme-color: #e2725b;
   --secondary-font-color: #424242;
   --black-font-color: black;
   --bg-color-dark: #0c131e;
-  --bg-color-light: #cce0ff;
+  --bg-color-light: #e5f4ff;
   --PrimaryFont: "Playfair Display";
   --SecondaryFont: "Lato";
   --TertiaryFont: "Atkinson Hyperlegible";
 }
+
 img {
   -webkit-user-drag: none;
 }
+
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .full-h {
   height: 100%;
 }
+
 .full-w {
   width: 100%;
 }
+
 .full-hw {
   width: 100%;
   height: 100%;
 }
+
 a {
   text-decoration: none;
   width: fit-content;
 }
+
 .column {
   display: flex;
   flex-direction: column;
 }
+
 .c-row {
   display: flex;
   flex-direction: row;
 }
+
 .no-overflow {
   overflow: hidden;
 }
+
 .absolute_00 {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .fixed_00 {
   position: fixed;
   top: 0;
   left: 0;
 }
+
 .w-90 {
   width: 90%;
 }
+
 .comfont {
   font-family: var(--TertiaryFont);
   letter-spacing: 1px;
   font-weight: bold;
 }
+
 .comicon {
   height: 11px;
   margin-right: 5px;
@@ -96,14 +114,17 @@ a {
   cursor: pointer;
   transition: 0.4s;
 }
+
 .combtn img {
   width: 20px;
   margin-right: 6px;
   transition: 0.4s;
 }
+
 .combtn:hover img {
   filter: invert(1);
 }
+
 .inline-button {
   background-color: transparent;
   border: 1px solid rgb(138, 138, 138);
@@ -113,29 +134,46 @@ a {
   padding: 5px 8px;
   border-radius: 3px;
 }
+
 .inline-button:hover {
   background-color: white;
   color: black;
   font-weight: bold;
 }
+
 .white-border-transparent {
   border: 2px solid white;
   background: transparent;
   color: white;
 }
+
 .white-border-transparent:hover {
   background: white;
   color: black;
 }
+
 .white-border-white {
   border: 2px solid white;
   background: white;
   color: black;
 }
+
 .white-border-white:hover {
   background: transparent;
   color: white;
 }
+
+.black-border-black {
+  border: 2px solid black;
+  background: black;
+  color: white;
+}
+
+.black-border-black:hover {
+  background: transparent;
+  color: black;
+}
+
 .smr-btn {
   padding: 10px;
   width: 40px;
@@ -144,11 +182,13 @@ a {
   border: 1.5px solid var(--main-theme-color);
   transition: 0.3s;
 }
+
 .smr-btn img {
   height: 100%;
   width: 100%;
   filter: invert(1);
 }
+
 .smr-btn:hover {
   filter: contrast(1.2);
 }
@@ -162,6 +202,7 @@ a {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 100;
   }

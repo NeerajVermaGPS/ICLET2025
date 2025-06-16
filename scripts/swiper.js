@@ -1,5 +1,6 @@
 /* 
-Author: Neeraj Verma 
+Author: Neeraj Verma
+LinkedIn: https://www.linkedin.com/in/neerajvermagps/ 
 Library Used: swiper.js
 Updated on: 15-06-2025
 */
@@ -22,7 +23,7 @@ const swiper = new Swiper(".mySwiper", {
 
   autoplay: {
     delay: 2000,
-    disableOnInteraction: false, // optional
+    disableOnInteraction: false,
   },
 
   breakpoints: breakpoints,

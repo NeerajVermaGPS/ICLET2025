@@ -1,6 +1,7 @@
 /* 
 Author: Neeraj Verma
-Updated on: 15-06-2025
+LinkedIn: https://www.linkedin.com/in/neerajvermagps/
+Updated on: 16-06-2025
 */
 
 .hero {
@@ -8,9 +9,11 @@ Updated on: 15-06-2025
   position: relative;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
+
 .hero-bg {
   object-fit: cover;
 }
+
 .hero-content {
   background-color: #00000040;
   letter-spacing: 1px;
@@ -82,6 +85,7 @@ Updated on: 15-06-2025
   text-align: justify;
   font-family: var(--SecondaryFont);
 }
+
 .sub-section-title {
   font-size: 20px;
   font-weight: bold;
@@ -95,6 +99,7 @@ Updated on: 15-06-2025
 
 .dates {
   min-width: 300px;
+
   li {
     display: flex;
     flex-direction: column;
@@ -141,16 +146,67 @@ Updated on: 15-06-2025
   background-color: #e91e63;
 }
 
-.track-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+.tracks {
+  gap: 20px;
   padding: 20px;
-  margin-bottom: 30px;
-  transition: box-shadow 0.3s;
 }
+
+.track-card-ctnr {
+  width: fit-content;
+}
+
+.track-card {
+  max-width: 350px;
+  width: 95%;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(0, 0, 0, 0.05);
+  height: 350px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0px;
+  font-family: var(--TertiaryFont);
+
+  h5 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+  }
+}
+
 .track-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+
+.track-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.track-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.track-card li {
+  padding-left: 1em;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.track-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #007acc;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
 
 .theme-sec-gallery {
   width: 45%;
@@ -163,14 +219,17 @@ Updated on: 15-06-2025
   background: #fff;
   padding: 30px;
 }
+
 .conference-committees h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 28px;
 }
+
 .committee-block {
   margin-bottom: 20px;
 }
+
 .committee-block h3 {
   background: #007acc;
   color: #fff;
@@ -178,54 +237,477 @@ Updated on: 15-06-2025
   border-radius: 4px;
   font-size: 20px;
 }
+
 .committee-block p {
   margin: 10px 0 0 15px;
   display: flex;
   flex-direction: column;
 }
+
 .committee-pair {
   display: flex;
   gap: 20px;
 }
+
 .committee-group {
   width: 48%;
 }
+
 .cb-name {
   font-size: 17px;
   color: #000000;
 }
+
 .cb-des {
   font-size: 14px;
   color: #000000af;
 }
 
+.section-padding {
+  padding: 40px 0;
+}
+
+footer {
+  display: block;
+
+  ul li,
+  ol li {
+    list-style: none;
+  }
+
+  ul,
+  ol {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.card-ctnr {
+  height: 328px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: fit-content;
+}
+
+.card {
+  border-radius: 6px;
+  position: relative;
+  background-color: #e0f1ff;
+  align-items: center;
+  border: 1px solid var(--textYellow);
+  margin: 10px;
+  height: 306px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: 0.5s;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+}
+
+.card-content {
+  padding: 0px 14px 15px 14px;
+  width: 220px;
+}
+
+.image-content {
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  top: 0;
+  transition: 0.5s;
+}
+
+.card-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: fill;
+  transition: 0.5s;
+  border: 1px solid;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.quote {
+  display: flex;
+  width: 190px;
+  font-size: 11px;
+  margin: 0 !important;
+  opacity: 0;
+  transition: 0.5s;
+  align-items: center;
+  height: 85.33px;
+  color: #454545;
+  font-family: var(--TertiaryFont);
+}
+
+.designation {
+  margin: 2px 0 10px 0;
+  color: #5f5f5f;
+  font-weight: normal;
+}
+
+.card-ctnr:hover .card {
+  height: 250px;
+  box-shadow: 0px 6px 8px 2px #b3b3b3;
+}
+
+.card-ctnr:hover .image-content {
+  top: -64px;
+  width: 120px;
+  height: 120px;
+  background-color: var(--themeYellowBg);
+  border-radius: 50%;
+  padding: 7px;
+  border: 1px solid var(--textYellow);
+}
+
+.card-ctnr:hover .card-img {
+  border-radius: 50%;
+}
+
+.card-ctnr:hover .card {
+  height: 250px;
+}
+
+.card-ctnr:hover .quote {
+  opacity: 1;
+}
+
+#register {
+  font-family: var(--SecondaryFont), sans-serif;
+}
+
+.registration-process {
+  padding: 60px 20px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  background: #ffffff5c;
+  border-radius: 8px;
+  padding: 20px;
+  width: 95%;
+  max-width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.8s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  font-size: 36px;
+  color: #3182ce;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: 20px;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.fee-details-ctnr {
+  padding: 10px 40px;
+}
+
+.fee-details {
+  flex-direction: row;
+}
+
+.bank-details {
+  width: 50%;
+
+  .label {
+    font-weight: bold;
+    color: #2c5282;
+  }
+
+  .value {
+    color: #2d3748c7;
+    text-align: end;
+  }
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e53e3e;
+}
+
+.bank-info {
+  background: #81d7ff17;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bank-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bank-row:last-child {
+  border-bottom: none;
+}
+
+.fee-table {
+  width: 45%;
+
+  tr td:nth-child(1) {
+    max-width: 185px;
+  }
+}
+
+.table-scroll {
+  padding: 5px 10px;
+  display: none;
+}
+
+.table-responsive::-webkit-scrollbar {
+  display: none;
+}
+
+.fee-table-table {
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  th,
+  td {
+    background-color: #81d7ff17;
+  }
+}
+
+.reach-map {
+  width: 100%;
+  height: 400px;
+  border: 1.5px solid #2c5282;
+  border-radius: 5px;
+}
+
+.reach-us {
+  margin-top: 60px;
+}
+
+.root-ctnr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.reach-card-column {
+  width: 48%;
+  gap: 20px;
+}
+
+.venue-section {
+  overflow-x: hidden;
+
+  .figure {
+    position: relative
+  }
+
+  .figure img {
+    border: 10px solid #fff;
+    max-width: 100%
+  }
+
+  .figure.figure-1 {
+    z-index: 1;
+    transform: scale(1.1)
+  }
+
+  .figure.figure-2 {
+    transform: rotate(2deg);
+    z-index: 2
+  }
+
+  .figure.figure-3 {
+    transform: rotate(358deg);
+    z-index: 3;
+    margin-top: -2rem
+  }
+
+  .figure.figure-4 {
+    z-index: 3;
+    transform: scale(1.1)
+  }
+
+  .grid-item {
+    border: 1px solid #8094b5
+  }
+
+  .grid-item .title {
+    font-size: 1.125rem;
+  }
+
+  .grid-item .svg-inline--fa {
+    font-size: 1.25rem
+  }
+
+  .text-dark-blue {
+    color: #2c5282;
+  }
+}
+
+.vehicle-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .table-scroll {
+    display: block;
+  }
+
+  .bank-row {
+    flex-direction: column;
+  }
+
+  .bank-details {
+    .value {
+      text-align: start;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .hero-content {
     padding: 0 20px;
+
     .lead {
       font-size: 16px;
     }
+
     .cname {
       font-size: 15px;
     }
   }
+
   .about-a {
     flex-direction: column;
   }
+
   .theme-sec-gallery {
     height: 300px;
     width: 100%;
   }
+
   .committee-blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+
   .committee-pair {
     flex-direction: column;
   }
+
   .committee-group {
     width: 100%;
+  }
+
+  .fee-details {
+    flex-direction: column;
+  }
+
+  .bank-details,
+  .fee-table {
+    width: 100%;
+  }
+
+  .fee-table-table {
+    width: 100%;
+  }
+
+  .table-scroll {
+    display: none;
+  }
+
+  .bank-row {
+    flex-direction: row;
+  }
+
+  .bank-details {
+    .value {
+      text-align: end;
+    }
+  }
+
+  .header-has-bg {
+    background: #141c25
+  }
+
+  .venue-section {
+    overflow-x: hidden
+  }
+
+  .venue-section .figure {
+    margin-bottom: 1rem
+  }
+
+  .venue-section .figure.figure-1 {
+    z-index: 1;
+    transform: scale(1)
+  }
+
+  .venue-section .figure.figure-2 {
+    transform: rotate(0deg);
+    z-index: 2
+  }
+
+  .venue-section .figure.figure-3 {
+    transform: rotate(0deg);
+    z-index: 3;
+    margin-top: 0
+  }
+
+  .venue-section .figure.figure-4 {
+    z-index: 3;
+    transform: scale(1)
   }
 }
 
@@ -233,14 +715,17 @@ Updated on: 15-06-2025
   ::-webkit-scrollbar {
     display: none;
   }
+
   .section-title {
     margin-top: 30px;
   }
+
   #about,
   #about-institute {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .countdown-blocks {
     gap: 16px;
   }
@@ -257,17 +742,61 @@ Updated on: 15-06-2025
   .time-label {
     font-size: 13px;
   }
+
+  .committee-patrons-b {
+    flex-direction: column;
+  }
+
+  .fee-details-ctnr {
+    padding: 10px 20px;
+  }
+
+  .fee-table-table {
+    max-width: 500px;
+  }
+
+  .root-ctnr {
+    flex-direction: column;
+  }
+
+  .reach-card-column {
+    width: 100%;
+  }
+
+  .track-card {
+    height: fit-content;
+  }
 }
 
 @media (max-width: 450px) {
+  .footer-area h3 {
+    margin-top: 20px;
+  }
+
   .dates {
     min-width: auto;
   }
+
   .countdown-blocks {
     max-width: 300px;
     flex-wrap: wrap;
   }
+
   .countdown-description {
     font-size: 15px;
+  }
+
+  .table-scroll {
+    display: block;
+  }
+
+  .bank-row {
+    flex-direction: column;
+  }
+
+  .bank-details {
+    .value {
+      text-align: start;
+    }
   }
 }
