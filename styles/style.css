@@ -24,6 +24,9 @@ Updated on: 16-06-2025
   position: absolute;
   top: 0;
   left: 0;
+  h1 {
+    font-size: 60px;
+  }
 }
 
 .global-timer {
@@ -773,6 +776,12 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .hero-content {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
   .footer-area h3 {
     margin-top: 20px;
   }
