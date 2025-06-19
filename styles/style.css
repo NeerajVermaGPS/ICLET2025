@@ -4,6 +4,10 @@ LinkedIn: https://www.linkedin.com/in/neerajvermagps/
 Updated on: 16-06-2025
 */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .hero {
   color: #fff;
   position: relative;
