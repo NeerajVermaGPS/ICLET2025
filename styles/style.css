@@ -269,6 +269,58 @@ Updated on: 16-06-2025
   font-size: 14px;
   color: #000000af;
 }
+.committee-card {
+  width: 200px;
+  flex-direction: column;
+}
+
+.committee-card-bg {
+  width: 150px;
+  position: relative;
+  margin: auto;
+  padding: 6%;
+  transition: 0.3s;
+}
+
+.ccb-top-img {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  padding: 14%;
+}
+
+.committee-card:hover .committee-card-bg {
+  transform: scale(1.1);
+}
+
+.ccb-bottom-img {
+  opacity: 0.6;
+}
+
+.committee-card-info {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 7px;
+  }
+  p {
+    margin: 0 !important;
+    letter-spacing: 0.5px;
+    color: #000000af;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
 
 .section-padding {
   padding: 40px 0;
@@ -605,6 +657,22 @@ footer {
   margin-right: 5px;
 }
 
+.association-section {
+  .association-ctnr {
+    flex-wrap: wrap;
+    img {
+      height: 130px;
+      filter: saturate(0);
+      opacity: 0.7;
+      transition: 0.3s
+    }
+    img:hover {
+      filter: none;
+      opacity: 1;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .table-scroll {
     display: block;
@@ -772,6 +840,29 @@ footer {
 
   .track-card {
     height: fit-content;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .committee-card {
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid #EBEBE5;
+  }
+  .committee-card-bg {
+    padding: 1.2%;
+  }
+  .committee-card-info {
+    align-items: start;
+    text-align: start;
+    padding-left: 15px;
+    p {
+      padding: 0;
+      font-size: 12px;
+    }
   }
 }
 
