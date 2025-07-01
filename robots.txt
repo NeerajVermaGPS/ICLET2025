@@ -1,0 +1,15 @@
+# Allow all bots
+User-agent: *
+Allow: /
+
+# Block crawling of dev resources
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /assets/files/
+
+# Allow icons and images for rich previews
+Allow: /assets/icons/
+Allow: /assets/images/
+
+# Sitemap reference
+Sitemap: https://iclet2025.poornima.org/sitemap.xml
