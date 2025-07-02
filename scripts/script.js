@@ -9,7 +9,7 @@ const menuNav = document.querySelector(".main-nav");
 const menuHeader = document.querySelector(".main-header");
 const navLinks = document.querySelectorAll(".menu-line");
 const logo = document.querySelector(".logo img");
-const launchDate = new Date(2025, 11, 14, 0, 0, 0);
+const launchDate = new Date(2025, 10, 14, 0, 0, 0);
 const countdownElement = document.querySelector(".countdown-blocks");
 
 menuIcon.addEventListener("click", function () {
