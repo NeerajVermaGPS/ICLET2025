@@ -168,7 +168,7 @@ Updated on: 16-06-2025
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background: rgba(0, 0, 0, 0.05);
-  height: 350px;
+  height: 600px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0px;
@@ -678,6 +678,46 @@ footer {
       opacity: 1;
     }
   }
+}
+
+.downloads-section {
+  padding: 60px 20px;
+  background: var(--bg-color-light);
+  text-align: center;
+}
+
+.downloads-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.download-item {
+  background: #ffffff;
+  border: 1px solid #007acc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.download-item h4 {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.blue-border-blue {
+  border: 2px solid #007acc;
+  background: #007acc;
+  color: white;
+}
+
+.blue-border-blue:hover {
+  background: transparent;
+  color: #007acc;
 }
 
 .marquee-container {
