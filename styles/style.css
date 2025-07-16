@@ -158,6 +158,8 @@ Updated on: 16-06-2025
 }
 
 .track-card-ctnr {
+  display: flex;
+  justify-content: center;
   width: fit-content;
 }
 
@@ -739,6 +741,10 @@ footer {
 
 .marquee-content:hover {
   animation-play-state: paused;
+}
+
+.imagine {
+  align-items: start;
 }
 
 @keyframes scroll-left {

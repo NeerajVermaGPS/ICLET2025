@@ -74,6 +74,10 @@ a {
   flex-direction: row;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .no-overflow {
   overflow: hidden;
 }
