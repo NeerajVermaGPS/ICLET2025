@@ -772,13 +772,31 @@ footer {
 .marquee-content {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 50s linear infinite;
   font-weight: 600;
   color: #333;
 }
 
 .marquee-content:hover {
   animation-play-state: paused;
+}
+
+.highlight-new {
+  color: red;
+  position: relative;
+  top: -8px;
+  right: 5px;
+  animation: blink-new 1s linear infinite;
+  font-size: 10px;
+}
+
+@keyframes blink-new {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .imagine {
